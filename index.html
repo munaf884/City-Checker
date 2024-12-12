@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2><u>Check Your City</u></h2>
+    <br>
+
+   City Name : <input placeholder="Enter City Name" type="text" id="userCityName">
+    <br>
+    <br>
+    <br>
+    <button id="btn" onclick="check()">Check</button>
+</div>
+    <script>
+        function check(){
+    let citiesName = ["Karachi" , "Lahore", "Islamabad", "Quetta", "Multan", "Peshawar"]
+
+    let userInputCity = document.getElementById("userCityName").value
+
+    let Matchname = "no"
+
+    for(let i=0; i < citiesName.length; i++){
+
+        if(userInputCity == citiesName[i]){
+
+            Matchname = "yes";
+            break;
+
+        }
+    }
+
+    if(Matchname == "yes"){
+        alert("City Matched!!")
+    }
+    else{
+        alert("City did not Match")
+    }
+}
+    </script>
+</body>
+</html>

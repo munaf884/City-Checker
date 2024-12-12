@@ -1,0 +1,28 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(129, 7, 7);
+    color: white;
+    font: weight 40px;;
+}
+h2{
+    color:white;
+}
+
+#userCityName{
+    width: 150px;
+    height: 20px;
+}
+
+#btn{
+    width: 100px;
+    height: 35px;
+    color: cornsilk;
+    background-color: rgb(255, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#btn:hover{
+background-color: aliceblue;
+color: black;
+transition: 0.3s ease-in-out;
+}
